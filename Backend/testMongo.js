@@ -1,7 +1,7 @@
 require('dotenv').config();
 const { MongoClient } = require('mongodb');
 
-const uri = process.env.MONGO_URI;
+const uri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/cbc-report-portal';
 
 async function testConnection() {
   try {
