@@ -1,0 +1,85 @@
+.class-allocation-container {
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #1f2937; /* dark gray */
+  text-align: center;
+}
+
+.allocation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+  margin: 0 auto 30px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.allocation-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #374151;
+}
+
+.allocation-form select,
+.allocation-form input {
+  margin-top: 5px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.allocation-form select:focus,
+.allocation-form input:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.allocate-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #273f68;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.allocate-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.allocation-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.allocation-table th,
+.allocation-table td {
+  border: 1px solid #d1d5db;
+  padding: 10px;
+  text-align: left;
+}
+
+.allocation-table th {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.allocation-table tr:nth-child(even) {
+  background-color: #fafafa;
+}

@@ -1,0 +1,29 @@
+@media print {
+  /* Hide sidebar, menus, buttons */
+  .no-print {
+    display: none !important;
+  }
+
+  .report-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+  /* Remove layout spacing caused by sidebar */
+  body {
+    margin: 0;
+  }
+
+  .teacher-main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Optional: remove shadows & backgrounds */
+  * {
+    box-shadow: none !important;
+    background: white !important;
+  }
+}
